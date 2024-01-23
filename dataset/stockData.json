@@ -1,0 +1,310 @@
+[
+  {
+    "symbol": "AAPL",
+    "currentPrice": 150.25,
+    "highPrice": 155.75,
+    "lowPrice": 147.80,
+    "industryType": "Information Technology"
+  },
+  {
+    "symbol": "GOOGL",
+    "currentPrice": 2700.50,
+    "highPrice": 2755.25,
+    "lowPrice": 2688.75,
+    "industryType": "Information Technology"
+  },
+  {
+    "symbol": "MSFT",
+    "currentPrice": 320.80,
+    "highPrice": 325.40,
+    "lowPrice": 318.50,
+    "industryType": "Information Technology"
+  },
+  {
+    "symbol": "AMZN",
+    "currentPrice": 3400.60,
+    "highPrice": 3455.75,
+    "lowPrice": 3388.40,
+    "industryType": "Consumer Discretionary"
+  },
+  {
+    "symbol": "TSLA",
+    "currentPrice": 800.00,
+    "highPrice": 820.50,
+    "lowPrice": 795.20,
+    "industryType": "Consumer Discretionary"
+  },
+  {
+    "symbol": "NVDA",
+    "currentPrice": 280.30,
+    "highPrice": 285.60,
+    "lowPrice": 277.40,
+    "industryType": "Information Technology"
+  },
+  {
+    "symbol": "JPM",
+    "currentPrice": 150.75,
+    "highPrice": 155.20,
+    "lowPrice": 148.90,
+    "industryType": "Financials"
+  },
+  {
+    "symbol": "BAC",
+    "currentPrice": 40.50,
+    "highPrice": 42.10,
+    "lowPrice": 39.80,
+    "industryType": "Financials"
+  },
+  {
+    "symbol": "XOM",
+    "currentPrice": 65.20,
+    "highPrice": 68.40,
+    "lowPrice": 64.80,
+    "industryType": "Energy"
+  },
+  {
+    "symbol": "PFE",
+    "currentPrice": 45.60,
+    "highPrice": 47.30,
+    "lowPrice": 44.90,
+    "industryType": "Healthcare"
+  },
+  {
+    "symbol": "NFLX",
+    "currentPrice": 550.25,
+    "highPrice": 560.80,
+    "lowPrice": 545.50,
+    "industryType": "Communication Services"
+  },
+  {
+    "symbol": "DIS",
+    "currentPrice": 170.50,
+    "highPrice": 175.20,
+    "lowPrice": 168.90,
+    "industryType": "Communication Services"
+  },
+  {
+    "symbol": "KO",
+    "currentPrice": 55.40,
+    "highPrice": 56.70,
+    "lowPrice": 54.90,
+    "industryType": "Consumer Staples"
+  },
+  {
+    "symbol": "PEP",
+    "currentPrice": 150.80,
+    "highPrice": 155.40,
+    "lowPrice": 148.60,
+    "industryType": "Consumer Staples"
+  },
+  {
+    "symbol": "CAT",
+    "currentPrice": 200.30,
+    "highPrice": 205.60,
+    "lowPrice": 198.40,
+    "industryType": "Industrials"
+  },
+  {
+    "symbol": "IBM",
+    "currentPrice": 120.75,
+    "highPrice": 125.20,
+    "lowPrice": 118.90,
+    "industryType": "Information Technology"
+  },
+  {
+    "symbol": "GS",
+    "currentPrice": 380.50,
+    "highPrice": 385.10,
+    "lowPrice": 378.80,
+    "industryType": "Financials"
+  },
+  {
+    "symbol": "CVX",
+    "currentPrice": 110.20,
+    "highPrice": 115.40,
+    "lowPrice": 108.60,
+    "industryType": "Energy"
+  },
+  {
+    "symbol": "MRK",
+    "currentPrice": 65.80,
+    "highPrice": 68.20,
+    "lowPrice": 63.90,
+    "industryType": "Healthcare"
+  },
+  {
+    "symbol": "INTC",
+    "currentPrice": 50.60,
+    "highPrice": 53.20,
+    "lowPrice": 49.90,
+    "industryType": "Information Technology"
+  },
+  {
+    "symbol": "CSCO",
+    "currentPrice": 55.10,
+    "highPrice": 57.30,
+    "lowPrice": 53.80,
+    "industryType": "Information Technology"
+  },
+  {
+    "symbol": "V",
+    "currentPrice": 240.60,
+    "highPrice": 245.75,
+    "lowPrice": 238.40,
+    "industryType": "Information Technology"
+  },
+  {
+    "symbol": "PG",
+    "currentPrice": 130.40,
+    "highPrice": 135.20,
+    "lowPrice": 128.90,
+    "industryType": "Consumer Staples"
+  },
+  {
+    "symbol": "WMT",
+    "currentPrice": 140.25,
+    "highPrice": 145.60,
+    "lowPrice": 138.40,
+    "industryType": "Consumer Staples"
+  },
+  {
+    "symbol": "BA",
+    "currentPrice": 210.30,
+    "highPrice": 215.60,
+    "lowPrice": 208.40,
+    "industryType": "Industrials"
+  },
+  {
+    "symbol": "HD",
+    "currentPrice": 310.75,
+    "highPrice": 315.20,
+    "lowPrice": 308.90,
+    "industryType": "Consumer Discretionary"
+  },
+  {
+    "symbol": "MCD",
+    "currentPrice": 220.50,
+    "highPrice": 225.10,
+    "lowPrice": 218.80,
+    "industryType": "Consumer Discretionary"
+  },
+  {
+    "symbol": "VZ",
+    "currentPrice": 55.20,
+    "highPrice": 57.40,
+    "lowPrice": 53.90,
+    "industryType": "Communication Services"
+  },
+  {
+    "symbol": "CMCSA",
+    "currentPrice": 60.80,
+    "highPrice": 63.40,
+    "lowPrice": 58.60,
+    "industryType": "Communication Services"
+  },
+  {
+    "symbol": "AAPL2",
+    "currentPrice": 150.25,
+    "highPrice": 15,
+    "lowPrice": 147.80,
+    "industryType": "Information Technology"
+  },
+  {
+    "symbol": "GOOGL2",
+    "currentPrice": 2700.50,
+    "highPrice": 2755.25,
+    "lowPrice": 2688.75,
+    "industryType": "Information Technology"
+  },
+  {
+    "symbol": "MSFT2",
+    "currentPrice": 320.80,
+    "highPrice": 325.40,
+    "lowPrice": 318.50,
+    "industryType": "Information Technology"
+  },
+  {
+    "symbol": "AMZN2",
+    "currentPrice": 3400.60,
+    "highPrice": 3455.75,
+    "lowPrice": 3388.40,
+    "industryType": "Consumer Discretionary"
+  },
+  {
+    "symbol": "TSLA2",
+    "currentPrice": 800.00,
+    "highPrice": 820.50,
+    "lowPrice": 795.20,
+    "industryType": "Consumer Discretionary"
+  },
+  {
+    "symbol": "NVDA2",
+    "currentPrice": 280.30,
+    "highPrice": 285.60,
+    "lowPrice": 277.40,
+    "industryType": "Information Technology"
+  },
+  {
+    "symbol": "JPM2",
+    "currentPrice": 150.75,
+    "highPrice": 155.20,
+    "lowPrice": 148.90,
+    "industryType": "Financials"
+  },
+  {
+    "symbol": "BAC2",
+    "currentPrice": 40.50,
+    "highPrice": 42.10,
+    "lowPrice": 39.80,
+    "industryType": "Financials"
+  },
+  {
+    "symbol": "XOM2",
+    "currentPrice": 65.20,
+    "highPrice": 68.40,
+    "lowPrice": 64.80,
+    "industryType": "Energy"
+  },
+  {
+    "symbol": "PFE2",
+    "currentPrice": 45.60,
+    "highPrice": 47.30,
+    "lowPrice": 44.90,
+    "industryType": "Healthcare"
+  },
+  {
+    "symbol": "NFLX2",
+    "currentPrice": 550.25,
+    "highPrice": 560.80,
+    "lowPrice": 545.50,
+    "industryType": "Communication Services"
+  },
+  {
+    "symbol": "DIS2",
+    "currentPrice": 170.50,
+    "highPrice": 175.20,
+    "lowPrice": 168.90,
+    "industryType": "Communication Services"
+  },
+  {
+    "symbol": "KO2",
+    "currentPrice": 55.40,
+    "highPrice": 56.70,
+    "lowPrice": 54.90,
+    "industryType": "Consumer Staples"
+  },
+  {
+    "symbol": "PEP2",
+    "currentPrice": 150.80,
+    "highPrice": 155.40,
+    "lowPrice": 148.60,
+    "industryType": "Consumer Staples"
+  },
+  {
+    "symbol": "CAT2",
+    "currentPrice": 200.30,
+    "highPrice": 205.60,
+    "lowPrice": 198.40,
+    "industryType": "Industrials"
+  }
+]
