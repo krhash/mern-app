@@ -21,7 +21,7 @@ const executeTrade = async (req, res) => {
   }
 }
 
-const buy = async(symbol, buyPrice, quantity) => {
+const buy = async(symbol, price, quantity) => {
   try {
     // Validate quantity
     if (quantity <= 0) {
@@ -32,7 +32,7 @@ const buy = async(symbol, buyPrice, quantity) => {
     const currentPrice = await getCurrentPrice(symbol);
 
     // Validate buy price
-    if (buyPrice > currentPrice) {
+    if (price > currentPrice) {
       throw new Error('Buy price cannot be higher than the current price.');
     }
 
@@ -44,7 +44,7 @@ const buy = async(symbol, buyPrice, quantity) => {
       // Update the existing document by adding the quantity
       const newQuantity = existingTrade.quantity + quantity;
 
-      const avgPrice = ((existingTrade.price * existingTrade.quantity) + (buyPrice * quantity)) / newQuantity
+      const avgPrice = ((existingTrade.price * existingTrade.quantity) + (price * quantity)) / newQuantity
 
       existingTrade.quantity = newQuantity
       existingTrade.price = avgPrice
@@ -94,6 +94,48 @@ const sell = async(symbol, sellPrice, quantity) => {
   }
 }
 
+const getAllTrades = async(req, res) => {
+  try {
+    await connectToDatabase();
+
+    const allTrades = await Trade.aggregate([
+      {
+        $match: {
+          quantity: { $gt: 0 } // Only include trades with quantity greater than 0
+        }
+      },
+      {
+        $lookup: {
+          from: 'stockData', // Note: Mongoose will convert the model name to lowercase and pluralize it
+          localField: 'symbol',
+          foreignField: 'symbol',
+          as: 'industryData'
+        }
+      },
+      {
+        $unwind: {
+          path: '$industryData',
+          preserveNullAndEmptyArrays: true
+        }
+      },
+      {
+        $project: {
+          _id: 0,
+          symbol: 1,
+          price: 1,
+          quantity: 1,
+          industryType: '$industryData.industryType'
+        }
+      }
+    ]);
+
+    return res.json(allTrades);
+
+  } catch (error) {
+    throw 'Error getting all trades:' + error.message;
+  }
+}
+
 const getCurrentPrice = async(symbol) => {
   try {
     await connectToDatabase();
@@ -113,5 +155,6 @@ const getCurrentPrice = async(symbol) => {
 }
 
 module.exports = {
-  executeTrade
+  executeTrade,
+  getAllTrades
 }

@@ -1,10 +1,11 @@
 import React from 'react';
+import Holdings from './holdings';
 
 function Portfolio() {
   return (
     <div>
       <h2>Portfolio Section</h2>
-      {/* Add your portfolio content here */}
+      <Holdings />
     </div>
   );
 }

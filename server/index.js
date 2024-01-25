@@ -12,7 +12,9 @@ app.get('/home', (req, res) => {
     res.sendFile('C:/Users/krush/OneDrive/Documents/Web Application Development/MERN Application/mern-app/server/home.html');
 });
 
-app.use(cors())
+app.use(cors({
+    'origin' : 'http://localhost:3001'
+}))
 
 // Use JSON middleware for POST request parsing
 app.use(express.json())
