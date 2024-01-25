@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Watchlist from './components/watchlist';
+import Portfolio from './components/portfolio';
+import './App.css'; // Create an App.css file for styling
 
 function App() {
+  const [activeSection, setActiveSection] = useState('watchlist');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="app-container">
+      <div className="tabs">
+        <button
+          className={activeSection === 'watchlist' ? 'active-tab' : ''}
+          onClick={() => setActiveSection('watchlist')}
         >
-          Learn React
-        </a>
-      </header>
+          Watchlist
+        </button>
+        <button
+          className={activeSection === 'portfolio' ? 'active-tab' : ''}
+          onClick={() => setActiveSection('portfolio')}
+        >
+          Portfolio
+        </button>
+      </div>
+
+      {activeSection === 'watchlist' ? <Watchlist /> : <Portfolio />}
     </div>
   );
 }

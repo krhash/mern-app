@@ -1,35 +1,26 @@
+// app.js
 const express = require('express');
-const { readFile } = require('fs');
-const mongoose = require('mongoose');
 const StockData = require('./model/stockData');
+const { SERVER_HOST, SERVER_PORT } = require('./constants');
+const stockDataRoutes = require('./routes/stockData')
+const tradeRoutes = require('./routes/trade')
+const cors = require('cors');
 
 const app = express();
 
 app.get('/home', (req, res) => {
-    res.send('hello');
-}
-)
+    res.sendFile('C:/Users/krush/OneDrive/Documents/Web Application Development/MERN Application/mern-app/server/home.html');
+});
 
-async function printStockData() {
-    try {
-        const dbName = 'tradingApp';
-        const dbUri = `mongodb://localhost:27017/${dbName}`
+app.use(cors())
 
-        await mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true });
+// Use JSON middleware for POST request parsing
+app.use(express.json())
 
-        const result = await StockData.find({});
+app.use('/api/stocks', stockDataRoutes)
 
-        console.log('Stock Data: ');
-        console.log(result);
-    } catch(error) {
-        console.error('Error: ', error.message);
-    } finally {
-        mongoose.connection.close();
-    }
-}
+app.use('/api/trade', tradeRoutes)
 
-printStockData();
-
-app.listen(3000, 'localhost', () => {
-    console.log('Server running on port 3000');
-})
+app.listen(SERVER_PORT, SERVER_HOST, () => {
+    console.log(`Server running on ${SERVER_HOST}:${SERVER_PORT}`);
+});
